@@ -56,13 +56,6 @@ Our final dataset consists of:</br>
 ![DataSet1](images/DataSet1.jpg)
 ![DataSet2](images/DataSet2.jpg)
 
-Below you can see sample images from our dataset.  
-**Clear images**  
-![DataSet1](images/samples_clear.jpg)
-
-**Smog images**  
-![DataSet2](images/samples_smog.jpg)
-
 ### Rules and regulations for selecting pictures
 - Images need to have a view of highways or streets;
 - Avoid a large number of people;
@@ -73,8 +66,16 @@ Below you can see sample images from our dataset.
 - Acceptable image formats: jpg, jpeg, png, jfif, webp.  
 
 Notes:
-- Synthetic images we used were taken from [SFSU synthetic dataset](https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/)
+- [SFSU synthetic dataset](https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/) was used to verify that images in our dataset are real and not synthetic.
 - To detect and remove duplicates (regardless of format and resolution), we were using [DupeGuru](https://dupeguru.voltaicideas.net/). It is an open-source tool for duplicate image detection that works across different platforms (Linux, OS X, Windows).
+
+Below you can see sample images from our dataset.  
+
+**Clear images**  
+![DataSet1](images/samples_clear.jpg)
+___
+**Smog images**  
+![DataSet2](images/samples_smog.jpg)
 
 ___
 # Part 3: Implementation with PyTorch
@@ -98,9 +99,9 @@ Prediction as label '0'(clear view) or '1'(smog detected).
 * [transforms.Normalize([0.485, 0.456, 0.406],[0.229, 0.224, 0.225])](https://pytorch.org/docs/stable/_modules/torchvision/transforms/transforms.html#Normalize)
         
 ### Model name 
-*Model with highest precision: [model.pt](models/model.pt).
+Model with highest precision: [model.pt](models/model.pt).
 
-### Description of the model 
+### Model architecture
 Five modules contain deeper sublayers.
 Let's go through them one by one:
 
@@ -173,7 +174,11 @@ We decided to create a user-friendly web app so everyone can test and experiment
 ___
 # Part 4: Web app
 
+This repository contains all the deployment code for our model: [https://github.com/lalwaniabhi/fastai-v3](https://github.com/lalwaniabhi/fastai-v3)
+Model is deployed at [smog4000.onrender.com](smog4000.onrender.com)
+
 ## Architecture
+
 
 ## Screenshots from the User Interface:
 
@@ -203,7 +208,7 @@ ___
 * color: RGB
 * Outshape: 224 X 224
 
-### About the model
+### Model architecture
 Custom CNN model is used here. Complete summary of model architecture is given below:
 ![model](images/model.jpg)
 <br/>
