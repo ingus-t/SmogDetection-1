@@ -2,6 +2,8 @@
 
 A project by **Planet-Earth** (#sg_planetearth) study group in Facebook Secure and Private AI Scholarship Challenge 2019.  
 **_Check out our web-app we have deployed at https://smog4000.onrender.com/. At this site, you can upload your street/highway images and test the accuracy of our classification system._** Although it works on all images, you can get the best results on highway images.
+
+[Web App](https://smog4000.onrender.com/)
 ___
 ## Part 1: Project Summary
 
@@ -105,33 +107,42 @@ Model with highest precision: [model.pt](models/model.pt).
 Five modules contain deeper sublayers.
 Let's go through them one by one:
 
-* CNN layers : 7 
-* Linear layers : 2
-* Pooling layers : 4
-* Batch normalization layers : 7
+| Parameters|
+| ---
+| CNN layers : 7 
+| Linear layers : 2
+| Pooling layers : 4
+| Batch normalization layers : 7
 
-**conv1 :**
-* CNN layers : Conv2d(3, 32, 3, padding=1), Conv2d(32, 32, 3, stride=2, padding=1)
-* Pooling layer : MaxPool2d(2, 2)
-* Batch normalization layer : BatchNorm2d(32), nn.BatchNorm2d(32),
+Details Of all Layers:
 
-**conv2 :**
-* CNN layers : Conv2d(32, 64, 3, padding=1), Conv2d(64, 64, 3, stride=2, padding=1)
-* Pooling layer : MaxPool2d(2, 2)
-* Batch normalization layer : BatchNorm2d(32), nn.BatchNorm2d(64),
+| conv1 |
+| ---
+| CNN layers : Conv2d(3, 32, 3, padding=1), Conv2d(32, 32, 3, stride=2, padding=1)
+| Pooling layer : MaxPool2d(2, 2)
+| Batch normalization layer : BatchNorm2d(32), nn.BatchNorm2d(32),
 
-**conv3 :**
-* CNN layers : Conv2d(64, 128, 3, padding=1), Conv2d(128, 128, 3, stride=2, padding=1)
-* Pooling layer : MaxPool2d(2, 2)
-* Batch normalization layer : BatchNorm2d(128), BatchNorm2d(128)
+| conv2 
+| ---
+| CNN layers : Conv2d(32, 64, 3, padding=1), Conv2d(64, 64, 3, stride=2, padding=1)
+| Pooling layer : MaxPool2d(2, 2)
+| Batch normalization layer : BatchNorm2d(32), nn.BatchNorm2d(64),
 
-**conv4 :**
-* CNN layers : Conv2d(128, 256, 3, padding=1)
-* Pooling layer : MaxPool2d(2, 2)
-* Batch normalization layer : BatchNorm2d(256)
+| conv3
+| ---
+| CNN layers : Conv2d(64, 128, 3, padding=1), Conv2d(128, 128, 3, stride=2, padding=1)
+| Pooling layer : MaxPool2d(2, 2)
+| Batch normalization layer : BatchNorm2d(128), BatchNorm2d(128)
 
-**fc :**
-* Linear layers : Linear(256, 128), Linear(128, 2)
+| conv4
+|---
+| CNN layers : Conv2d(128, 256, 3, padding=1)
+| Pooling layer : MaxPool2d(2, 2)
+| Batch normalization layer : BatchNorm2d(256)
+
+| fc
+| ---
+| Linear layers : Linear(256, 128), Linear(128, 2)
 
 **Dropout has been applied in conv4 and linear layer where probability = 0.35 in conv4 and 0.5 in fc.**
 
