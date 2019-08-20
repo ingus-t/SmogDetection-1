@@ -168,12 +168,12 @@ ___
 ## Screenshots from the User Interface:
 
 **'Smog' Detection**  
-![](images/sreenshot1.jpg)
-![](images/sreenshot2.jpg)
+![](images/screenshot1.jpg)
+![](images/screenshot2.jpg)
 
 **'Clear' Detection**  
-![](images/sreenshot3.jpg)
-![](images/sreenshot4.jpg)
+![](images/screenshot3.jpg)
+![](images/screenshot4.jpg)
 
 ___
 # Part 5: Implementation with Keras:
