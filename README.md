@@ -185,10 +185,12 @@ ___
 # Part 4: Web app
 
 This repository contains all the deployment code for our model: [https://github.com/lalwaniabhi/fastai-v3](https://github.com/lalwaniabhi/fastai-v3).  
-Model is deployed and availabe at this address: [https://smog4000.onrender.com](https://smog4000.onrender.com)
+Model is deployed and availabe at this address: [https://smog4000.onrender.com](https://smog4000.onrender.com)  
+Kaggle notebook with the same model [is available here](https://www.kaggle.com/lalwaniabhishek/smog4000?scriptVersionId=19003864)  
 
 ## Architecture
 This model has been developed with [fast.ai](https://www.fast.ai/). [Render](https://render.com/) cloud service is used for hosting.
+Resnet101 model was used. 99.8% accuracy was achieved on validation set.
 
 Applied transformations:  
 ```
