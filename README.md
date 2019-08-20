@@ -174,8 +174,8 @@ We decided to create a user-friendly web app so everyone can test and experiment
 ___
 # Part 4: Web app
 
-This repository contains all the deployment code for our model: [https://github.com/lalwaniabhi/fastai-v3](https://github.com/lalwaniabhi/fastai-v3)
-Model is deployed at [smog4000.onrender.com](smog4000.onrender.com)
+This repository contains all the deployment code for our model: [https://github.com/lalwaniabhi/fastai-v3](https://github.com/lalwaniabhi/fastai-v3).  
+Model is deployed and availabe at this address: [https://smog4000.onrender.com](https://smog4000.onrender.com)
 
 ## Architecture
 
