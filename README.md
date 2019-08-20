@@ -115,13 +115,13 @@ Let's go through them one by one:
 
 Details Of all Layers:
 
-| Layers Name               | conv1                                                               | Conv 2                                                               |              Conv 3                                                     | Conv4                          |
+| Layers Name               | Conv1                                                               | Conv 2                                                               |              Conv 3                                                     | Conv4                          |
 |:--------------------------|:--------------------------------------------------------------------|:---------------------------------------------------------------------|:------------------------------------------------------------------------|:-------------------------------|
 | CNN layers                | Conv2d(3, 32, 3, padding=1), Conv2d(32, 32, 3, stride=2, padding=1) | Conv2d(32, 64, 3, padding=1), Conv2d(64, 64, 3, stride=2, padding=1) | Conv2d(64, 128, 3, padding=1), Conv2d(128, 128, 3, stride=2, padding=1) | Conv2d(128, 256, 3, padding=1) |
 | Pooling layer             | MaxPool2d(2, 2)                                                     | MaxPool2d(2, 2)                                                      | MaxPool2d(2, 2)                                                         | MaxPool2d(2, 2)                |
 | Batch normalization layer | BatchNorm2d(32), nn.BatchNorm2d(32)                                 | BatchNorm2d(32), nn.BatchNorm2d(64)                                  | BatchNorm2d(128), BatchNorm2d(128)                                      | BatchNorm2d(256)               |
 
-| fc
+| Fully Connected Layers
 | ---
 | Linear layers : Linear(256, 128), Linear(128, 2)
 
