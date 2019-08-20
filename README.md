@@ -182,7 +182,7 @@ ___
 
 ### About the model
 Custom CNN model is used here. Complete summary of model architecture is given below:
-<img src = 'https://github.com/q-viper/SmogDetection/blob/master/Smog4000/Assets/model.JPG'>
+![model](images/model.jpg)
 <br/>
 The Sequential model has 3 blocks of CNN layers and one final linear layer. In each CNN block we have:
 * Convolution layers of same out filters(32, 32, 64, 64, 128, 128)
