@@ -56,8 +56,11 @@ Our final dataset consists of:</br>
 ![DataSet1](images/DataSet1.jpg)
 ![DataSet2](images/DataSet2.jpg)
 
-Below you can see sample images from our dataset:
+Below you can see sample images from our dataset.  
+**Clear images**  
 ![DataSet1](images/samples_clear.jpg)
+
+**Smog images**  
 ![DataSet2](images/samples_smog.jpg)
 
 ### Rules and regulations for selecting pictures
@@ -95,8 +98,7 @@ Prediction as label '0'(clear view) or '1'(smog detected).
 * [transforms.Normalize([0.485, 0.456, 0.406],[0.229, 0.224, 0.225])](https://pytorch.org/docs/stable/_modules/torchvision/transforms/transforms.html#Normalize)
         
 ### Model name 
-*[planetEarch_improved.pt](models/planetEarch_improved.pt)
-*[model.pt](models/model.pt)
+*Model with highest precision: [model.pt](models/model.pt).
 
 ### Description of the model 
 Five modules contain deeper sublayers.
