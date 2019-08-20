@@ -63,10 +63,10 @@ No | Name | Slack Handle
 ## Screenshots from the User Interface:
 
 **'Smog' Detection**  
-![](screenshots/Capture.JPG)
+![](images/Capture.JPG)
 
 **'Clear' Detection**  
-![](screenshots/Capture1.JPG)
+![](images/Capture1.JPG)
 ___
 # Part 2: Implementation with PyTorch
 
@@ -89,7 +89,8 @@ Prediction as label '0'(clear view) or '1'(smog detected).
 * [transforms.Normalize([0.485, 0.456, 0.406],[0.229, 0.224, 0.225])](https://pytorch.org/docs/stable/_modules/torchvision/transforms/transforms.html#Normalize)
         
 ### Model name 
-*[model.pt](https://github.com/Iamsdt/SmogDetection-1/blob/master/screenshots/planetEarch_improved.pt)
+*[planetEarch_improved.pt](models/planetEarch_improved.pt)
+*[model.pt](models/model.pt)
 
 ### Description of the model 
 Five modules contain deeper sublayers.
@@ -144,7 +145,7 @@ epoch : 50
 
 ## RESULTS
 
-![](screenshots/PT_train_test_loss_plot.png)
+![](images/PT_train_test_loss_plot.png)
 
 ### Test loss :
 Test Loss: 36.734721 
