@@ -48,9 +48,17 @@ ___
 ## Part 2: Gathering dataset
 
 ### Dataset
-Since inception, people in the group have taken their task most seriously. They contributed towards building a unique dataset which now has more than 4,000 images divided evenly between the two groups mentioned above. Our collection consists of:</br>
+Since inception, people in the group have taken their task most seriously. They contributed towards building a unique dataset which now has more than 4,000 images divided evenly between the two groups mentioned above.  
+Dataset creation notebook is available here: [Smog4000_Dataset_Creation.ipynb](Smog4000_Dataset_Creation.ipynb)  
+We expanded our dataset day by day from images submitted by group members. Combined dataset was compiled and checked for duplicates regularly, and made available to team members.  
+
+Our final dataset consists of:</br>
 ![DataSet1](images/DataSet1.jpg)
 ![DataSet2](images/DataSet2.jpg)
+
+Below you can see sample images from our dataset:
+![DataSet1](images/samples_clear.jpg)
+![DataSet2](images/samples_smog.jpg)
 
 ### Rules and regulations for selecting pictures
 - Images need to have a view of highways or streets;
