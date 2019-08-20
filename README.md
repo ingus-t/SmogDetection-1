@@ -1,9 +1,8 @@
 # Smog Detection Project
 
 A project by **Planet-Earth** (#sg_planetearth) study group in Facebook Secure and Private AI Scholarship Challenge 2019.  
-**_Check out our web-app we have deployed at https://smog4000.onrender.com/. At this site, you can upload your street/highway images and test the accuracy of our classification system._** Although it works on all images, you can get the best results on highway images.
+**_Check out our web-app we have deployed at [smog4000.onrender.com](https://smog4000.onrender.com/). At this site, you can upload your street/highway images and test the accuracy of our classification system._** Although it works on all images, you can get the best results on highway images.
 
-[Web App](https://smog4000.onrender.com/)
 ___
 ## Part 1: Project Summary
 
@@ -189,7 +188,22 @@ This repository contains all the deployment code for our model: [https://github.
 Model is deployed and availabe at this address: [https://smog4000.onrender.com](https://smog4000.onrender.com)
 
 ## Architecture
+This model has been developed with [fast.ai](https://www.fast.ai/). [Render](https://render.com/) cloud service is used for hosting.
 
+Applied transformations:  
+```
+trfms = get_transforms(
+		do_flip=True, 
+		flip_vert=True, 
+		max_rotate=10.0, 
+		max_zoom=1.1, 
+		max_lighting=0.2, 
+		max_warp=0.2, 
+		p_affine=0.75, 
+		p_lighting=0.75)
+```
+Images after transformations have been applied:  
+![](images/fastai_transformations.jpg)
 
 ## Screenshots from the User Interface:
 
