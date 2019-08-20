@@ -47,7 +47,7 @@ No | Name | Slack Handle
 ## Application of Secure & Private AI in this project
 The images collected in this project are carefully chosen to avoid any copyright issues.  For images that contain intellectual property issues or private images, we can consider incorporating federated learning and secure prediction into our classification models. This will allow for training in a private cloud while minimizing the risk of leaking intellectual property or private training data. 
 ___
-## Part 2: Gathering the dataset
+## Part 2: Creating the Smog4000 dataset
 
 ### Dataset
 Since inception, people in the group have taken their task most seriously. They contributed towards building a unique dataset which now has more than 4,000 images divided evenly between the two groups mentioned above.  
