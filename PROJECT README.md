@@ -210,9 +210,9 @@ Total parameters: 1,469,346
 * Batch Size: 32
 
 ### Performance
-* Train Accuracy: 0.9968%
-* Validation Accuracy: 0.9921%
-* Test Accuracy: 0.985%
+* Train Accuracy: 0.9968
+* Validation Accuracy: 0.9921
+* Test Accuracy: 0.985
 * Train time: 750 seconds per epoch
 
 ### Future Implementations:
