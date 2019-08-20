@@ -26,8 +26,8 @@ Smog is a byproduct of the global climate change scenario. As we move further in
 
 ### Dataset
 Since inception, people in the group have taken their task most seriously. They contributed towards building a unique dataset which now has more than 4,000 images divided evenly between the two groups mentioned above. Our collection consists of:</br>
-![DataSet1](images/DataSet1.JPG)
-![DataSet2](images/DataSet2.JPG)
+![DataSet1](images/DataSet1.jpg)
+![DataSet2](images/DataSet2.jpg)
 
 ### Rules and regulations for selecting pictures
 - Images need to have a view of highways or streets;
