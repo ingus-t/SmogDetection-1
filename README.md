@@ -3,7 +3,7 @@
 A project by **Planet-Earth** (#sg_planetearth) study group in Facebook Secure and Private AI Scholarship Challenge 2019.  
 **_Check out our web-app we have deployed at https://smog4000.onrender.com/. At this site, you can upload your street/highway images and test the accuracy of our classification system._** Although it works on all images, you can get the best results on highway images.
 ___
-## Part 1: Project summary
+## Part 1: Project Summary
 
 ### Description:
 Smog Detection project has been created as a collaborative team effort between 
@@ -20,7 +20,7 @@ In any practical situation, other components need to be taken into consideration
 ### Our approach
 There are plenty of existing solutions and advancements in computer vision. Our approach is to use Machine Learning Image Detection and train a CNN model. Smog Detection is a smog classification project, where images are arranged into two main categories: "Smog/Fog/NotClearlyVisible Highways" and "Clearly Visible Highways".</br>
 
-### Project objective
+### Project Objective
 Smog is a byproduct of the global climate change scenario. As we move further into the industrialized age, Smog continues to pollute our air, reduce visibility on roads and is a leading cause of accidents on roads.  
 **The primary goal of the project is to avoid and help reduce the rate of accidents in self-driving vehicles. That can be achieved by using this classifier model as one of the key components attached to traffic cameras**. This way vehicles can automatically be alerted about smog on the roads, streets or highways, no matter if it's heavy, medium or low traffic to adjust its dynamics like speed, steering rotation, lanes, etc. We can use the prediction output labels from the model to alert vehicles and drivers. 
 
@@ -45,7 +45,7 @@ No | Name | Slack Handle
 ## Application of Secure & Private AI in this project
 The images collected in this project are carefully chosen to avoid any copyright issues.  For images that contain intellectual property issues or private images, we can consider incorporating federated learning and secure prediction into our classification models. This will allow for training in a private cloud while minimizing the risk of leaking intellectual property or private training data. 
 ___
-## Part 2: Gathering dataset
+## Part 2: Gathering the dataset
 
 ### Dataset
 Since inception, people in the group have taken their task most seriously. They contributed towards building a unique dataset which now has more than 4,000 images divided evenly between the two groups mentioned above.  
