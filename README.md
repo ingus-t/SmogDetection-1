@@ -24,24 +24,6 @@ There are plenty of existing solutions and advancements in computer vision. Our 
 Smog is a byproduct of the global climate change scenario. As we move further into the industrialized age, Smog continues to pollute our air, reduce visibility on roads and is a leading cause of accidents on roads.  
 **The primary goal of the project is to avoid and help reduce the rate of accidents in self-driving vehicles. That can be achieved by using this classifier model as one of the key components attached to traffic cameras**. This way vehicles can automatically be alerted about smog on the roads, streets or highways, no matter if it's heavy, medium or low traffic to adjust its dynamics like speed, steering rotation, lanes, etc. We can use the prediction output labels from the model to alert vehicles and drivers. 
 
-### Dataset
-Since inception, people in the group have taken their task most seriously. They contributed towards building a unique dataset which now has more than 4,000 images divided evenly between the two groups mentioned above. Our collection consists of:</br>
-![DataSet1](images/DataSet1.jpg)
-![DataSet2](images/DataSet2.jpg)
-
-### Rules and regulations for selecting pictures
-- Images need to have a view of highways or streets;
-- Avoid a large number of people;
-- Avoid traffic accidents;
-- Avoid night pictures;
-- Avoid bird's-eye view;
-- Avoid images that are copyrighted or have a watermark;
-- Acceptable image formats: jpg, jpeg, png, jfif, webp.  
-
-Notes:
-- Synthetic images we used were taken from [SFSU synthetic dataset](https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/)
-- To detect and remove duplicates (regardless of format and resolution), we were using [DupeGuru](https://dupeguru.voltaicideas.net/). It is an open-source tool for duplicate image detection that works across different platforms (Linux, OS X, Windows).
-
 ### Contributors:
 
 No | Name | Slack Handle 
@@ -60,15 +42,31 @@ No | Name | Slack Handle
 12 | Abhishek Lalwani | @Abhishek Lalwani
 13 | Laura Truncellito | @LauraT
 
-## Screenshots from the User Interface:
-
-**'Smog' Detection**  
-![](images/Capture.JPG)
-
-**'Clear' Detection**  
-![](images/Capture1.JPG)
+## Application of Secure & Private AI in this project
+The images collected in this project are carefully chosen to avoid any copyright issues.  For images that contain intellectual property issues or private images, we can consider incorporating federated learning and secure prediction into our classification models. This will allow for training in a private cloud while minimizing the risk of leaking intellectual property or private training data. 
 ___
-# Part 2: Implementation with PyTorch
+## Part 2: Gathering dataset
+
+### Dataset
+Since inception, people in the group have taken their task most seriously. They contributed towards building a unique dataset which now has more than 4,000 images divided evenly between the two groups mentioned above. Our collection consists of:</br>
+![DataSet1](images/DataSet1.jpg)
+![DataSet2](images/DataSet2.jpg)
+
+### Rules and regulations for selecting pictures
+- Images need to have a view of highways or streets;
+- Avoid a large number of people;
+- Avoid traffic accidents;
+- Avoid night pictures;
+- Avoid bird's-eye view;
+- Avoid images that are copyrighted or have a watermark;
+- Acceptable image formats: jpg, jpeg, png, jfif, webp.  
+
+Notes:
+- Synthetic images we used were taken from [SFSU synthetic dataset](https://people.ee.ethz.ch/~csakarid/SFSU_synthetic/)
+- To detect and remove duplicates (regardless of format and resolution), we were using [DupeGuru](https://dupeguru.voltaicideas.net/). It is an open-source tool for duplicate image detection that works across different platforms (Linux, OS X, Windows).
+
+___
+# Part 3: Implementation with PyTorch
 
 This is a descriptive summary of the Model Architecture we have implemented, and the Data Augmentations we have applied.  
 [Find the notebook for this implementation here](https://www.kaggle.com/berenice18/smogdetection).
@@ -163,7 +161,20 @@ Test Accuracy (Overall): 98% (767/775)
 We decided to create a user-friendly web app so everyone can test and experiment with our project. We hope that this will be useful for any road-alerts related project that may require such a smog detection/classification facility. 
 
 ___
-# Part 3: Implementation with KERAS:
+# Part 4: Web app
+
+## Architecture
+
+## Screenshots from the User Interface:
+
+**'Smog' Detection**  
+![](images/Capture.JPG)
+
+**'Clear' Detection**  
+![](images/Capture1.JPG)
+
+___
+# Part 5: Implementation with Keras:
 
 ### Description
 * Libraries used: keras 2.2.4, numpy, matplotlib
@@ -219,6 +230,3 @@ Total parameters: 1,469,346
 ### Future Implementations:
 * Using fewer parameters
 * Test with different optimizer and loss functions
-
-## Application of Secure & Private AI in this project
-The images collected in this project are carefully chosen to avoid any copyright issues.  For images that contain intellectual property issues or private images, we can consider incorporating federated learning and secure prediction into our classification models. This will allow for training in a private cloud while minimizing the risk of leaking intellectual property or private training data. 
